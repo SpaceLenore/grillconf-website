@@ -32,7 +32,7 @@
                         <ul class="navbar-nav ml-auto">
                             <!-- links -->
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Blog</a>
+                                <a class="nav-link" href="blogg.html">Blogg</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Galleri</a>
@@ -41,7 +41,7 @@
                                 <a class="nav-link" href="#">Arkiv</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Om</a>
+                                <a class="nav-link" href="om-grillcon.html">Om</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="https://github.com/dbwebb-se/grillcon">GitHub</a>
@@ -57,19 +57,19 @@
                 <div class="container relevantinfo">
                     <div class="row relevantrow">
                         <div class="col-md-3 col-sm-6 relevantitems">
-                            <a href="#">
+                            <a href="#intro">
                                 <i class="far fa-calendar-check"></i>
                                 <span>17 - 19 MAJ</span>
                             </a>
                         </div>
                         <div class="col-md-3 col-sm-6 relevantitems">
-                            <a href="#">
+                            <a href="#schema">
                                 <i class="fas fa-list"></i>
                                 <span>SCHEMA</span>
                             </a>
                         </div>
                         <div class="col-md-3 col-sm-6 relevantitems">
-                            <a href="#">
+                            <a href="#soon">
                                 <i class="fab fa-wpforms"></i>
                                 <span>ANMÄLAN</span>
                             </a>
@@ -88,7 +88,7 @@
         <!-- Begin content -->
         <div class="container">
             <!-- intro -->
-            <div class="card">
+            <div class="card" id="intro">
                 <div class="card-body">
                     <h3 class="card-title">GrillCon 2018 Vår - Hackathon och Konferens</h3>
                     <p class="card-text">
@@ -99,7 +99,7 @@
                 </div>
             </div>
             <!-- schema -->
-            <div class="card">
+            <div class="card" id="schema">
                 <div class="card-body">
                     <h3 class="card-title">Schema & Planering</h3>
                     <p class="card-text">
@@ -163,6 +163,7 @@
                     </p>
                 </div>
             </div>
+            <!-- Hackathon -->
             <div class="card">
                 <div class="card-body">
                     <h3 class="card-title">Hackathon</h3>
@@ -226,8 +227,42 @@
                 </div>
             </div>
         </div>
-
+        <!-- footer -->
+        <div class="container-fluid footer">
+            <div class="container innerfooter">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h4>Basics</h4>
+                        <p>
+                            GrillCon är ett event som sker i slutet av maj och tre veckor in i september. Det är en grillfest för webbprogrammerare, programvarutekniker och likasinnade.
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                            <h4>Social</h4>
+                            <span class="socialicons">
+                                <a href="https://facebook.com/GrillCon"><i class="fab fa-facebook-square"></i></a>
+                                <a href="https://twitter.com/GrillCon"><i class="fab fa-twitter-square"></i></a>
+                                <a href="https://plus.google.com/106688549010851146409"><i class="fab fa-google-plus-g"></i></a>
+                                <a href="https://www.linkedin.com/groups/8518022"><i class="fab fa-linkedin"></i></a>
+                                <a href="https://github.com/dbwebb-se/grillcon"><i class="fab fa-github-square"></i></a>
+                            </span>
+                    </div>
+                    <div class="col-md-4 irclinks">
+                        <h4>Join the club</h4>
+                        <a href="irc.bsnet.se://#db-o-webb">irc.bsnet.se://#db-o-webb</a><br>
+                        <a href="https://github.com/dbwebb-se/grillcon/issues">GitHub Issues</a>
+                    </div>
+                </div>
+                <div class="gillat">
+                    <a class="grilling" href="grillcon.dbwebb.se">
+                        <img src="img/dbwebb-lov.png" alt="logo" style="width:50px; margin-right:10px;">GrillCon
+                        <img src="img/dbwebb-lov.png" alt="logo" style="width:50px; margin-right:10px;" class="flipped">
+                    </a>
+                </div>
+            </div>
+        </div>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/scroll.js"></script>
     </body>
 </html>

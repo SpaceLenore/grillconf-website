@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Yesteryear" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400" rel="stylesheet">
+        <link href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+        <title>Grill Conference</title>
+    </head>
+    <body>
+        <!-- Header (also wraps navbar)-->
+        <div class="container-fluid header">
+            <div class="alsoheader-small">
+                <!-- navbar -->
+                <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+                    <!-- logo -->
+                    <a class="navbar-brand" href="index.html">
+                        <img src="img/dbwebb-lov.png" alt="logo" style="width:50px; margin-right:10px;">
+                        GrillCon
+                    </a>
+                    <!-- Mobile navbar button -->
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <!-- links wrap -->
+                    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                        <ul class="navbar-nav ml-auto">
+                            <!-- links -->
+                            <li class="nav-item">
+                                <a class="nav-link" href="blogg.html">Blogg</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Galleri</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Arkiv</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="om-grillcon.html">Om</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://github.com/dbwebb-se/grillcon">GitHub</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <!-- end navbar -->
+                <!-- begin flashy header -->
+                <div class="container showoff-small">
+                    Grill Conference 2018
+                </div>
+            </div>
+        </div>
+        <!-- end landing -->
+        <!-- Begin content -->
+        <div class="container">
+            <div class="card">
+                <div class="card-body">
+                    <h3 class="card-title">Skoj på Grillcon</h3>
+                    <p class="card-text">
+                        Under höstgrillen 2017 återskapades det kända konstverket The last supper av Leonardo da Vinci.
+                        <img src="https://grillcon.dbwebb.se/image/grill-album/mos_grill.jpg" class="img-fluid inlineimg" alt="The Last Grill">
+                        På bilden ovan kan vi se Jesus, spelad av Mos, omgiven av sina lärjungar. Nedan kan vi skåda originalet av Leonardo da Vinci.
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/%C3%9Altima_Cena_-_Da_Vinci_5.jpg/1920px-%C3%9Altima_Cena_-_Da_Vinci_5.jpg" class="img-fluid inlineimg" alt="The Last Supper">
+                        Vi tackar Charlie Svahnberg för den fina bilden på mos.
+                    </p>
+                </div>
+            </div>
+            <!-- ============= -->
+            <div class="card">
+                <div class="card-body">
+                    <h3 class="card-title">Startskott för WM i Uptime 2017/2018</h3>
+                    <p class="card-text">
+                        Då börjar det igen. Deltagarna har legat i hårda träningsläger sedan i våras då förra omgången avslutades.
+                        Nu gäller det att ha bästa uptime under 2017/2018.
+                        Närmare bestämt så startar tävlingen den 15 september i samband med GrillCon och avslutas den 15:e maj 2018.
+                        <br><br>
+                        Vi ser fram emot fina siffror på uptime, likaväl som vi ser fram emot de ursäkter som komma skall för siffror som kunde varit bättre.
+
+                        <h4>WM i Uptime för hemmaservrar</h4>
+                        Så här fungerar det.
+                        <br>
+                        WM står för WebbprogrammeringsMästerskap. Om det var otydligt.
+                        <br>
+                        Fixa en hemmaserver, en Raspberry PI eller någon annan dator som du kan kalla din hemmaserver. Den måste finnas hemma där du bor.
+                        <br>
+                        Installera något bra på den, spelar ingen roll vad, men troligen är det en Linux/Unix-server i botten.
+                        <br>
+                        Tävlingen startar vid höstgrillen och pågår näst intill vårgrillen.
+                        <br>
+                        Mest uptime vinner.
+                        <br>
+                        De som inte når full uptime kan ändå få en honourable mention. Oklart om det är bra eller ej.
+                        <br>
+                        Vinnare får en guld-badge som delas ut i samband med vårgrillen.
+                        <br><br>
+                        <h4>Resultatlistan</h4>
+                        Du finner resultatlistan via uptime.dbwebb.se.
+                        Via den webbplatsen finner du också information om hur du kan rapportera din nuvarande uptime varje morgon.
+                        <br><br>
+                        I korta drag handlar det om att lägga in en kommando i din crontab som ser ut så här:
+                        <br>
+                        <pre class="code">00 08 * * * wget -qO /dev/null "http://uptime.dbwebb.se/add/?who=mos+desktop&uptime=$(uptime | awk '{print $3}')"</pre>
+                        Kommandot rapporterar din uptime varje morgon klockan 08:00, men se till att byta ut identifieraren
+                        <pre class="code">who=mos+desktop</pre> till din egen, det är alltså strängen mos+desktop som du byter till något eget
+                        så vi känner igen dig och din server.
+                        <br>
+                        <br>
+                        <h4>Topplistan över ursäkter</h4>
+                        Många är ursäkterna när uptime tappas.
+                        <blockquote class="blockquote">
+                            Allinrep: Jag var dum nog att flytta mitt under tävlingen. Efter 123 dagar i täten blev det tyvärr dags att flytta servern till en ny garderob.
+                            <br><br>
+                            Thulin: …en thailändsk rislykta i ett ställverk med strömavbrott i stora delar av Malmö som följd…
+                            <br><br>
+                            TitoN: Min tv brann upp och säkringen gick.
+                            <br><br>
+                            Pansar: Svärmor dammsög i sovrummet och råkade dra ut sladden, när jag var på semester.
+                            <br><br>
+                            Pansar: Sladden trillade ur nätaggregatet av sig själv.
+                            <br><br>
+                            Pansar: Elektrikern bröt strömmen i huset för att koppla el (fegis).
+                        </blockquote>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- footer -->
+        <div class="container-fluid footer">
+            <div class="container innerfooter">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h4>Basics</h4>
+                        <p>
+                            GrillCon är ett event som sker i slutet av maj och tre veckor in i september. Det är en grillfest för webbprogrammerare, programvarutekniker och likasinnade.
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                            <h4>Social</h4>
+                            <span class="socialicons">
+                                <a href="https://facebook.com/GrillCon"><i class="fab fa-facebook-square"></i></a>
+                                <a href="https://twitter.com/GrillCon"><i class="fab fa-twitter-square"></i></a>
+                                <a href="https://plus.google.com/106688549010851146409"><i class="fab fa-google-plus-g"></i></a>
+                                <a href="https://www.linkedin.com/groups/8518022"><i class="fab fa-linkedin"></i></a>
+                                <a href="https://github.com/dbwebb-se/grillcon"><i class="fab fa-github-square"></i></a>
+                            </span>
+                    </div>
+                    <div class="col-md-4 irclinks">
+                        <h4>Join the club</h4>
+                        <a href="irc.bsnet.se://#db-o-webb">irc.bsnet.se://#db-o-webb</a><br>
+                        <a href="https://github.com/dbwebb-se/grillcon/issues">GitHub Issues</a>
+                    </div>
+                </div>
+                <div class="gillat">
+                    <a class="grilling" href="grillcon.dbwebb.se">
+                        <img src="img/dbwebb-lov.png" alt="logo" style="width:50px; margin-right:10px;">GrillCon
+                        <img src="img/dbwebb-lov.png" alt="logo" style="width:50px; margin-right:10px;" class="flipped">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
