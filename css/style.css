@@ -148,6 +148,15 @@ h6 {
     flex-direction: row;
     justify-content: space-around;
     font-size: 2rem;
+    transition: 0.3s;
+}
+
+.socialicons a {
+    transition: 0.3s;
+}
+
+.socialicons a:hover {
+    color: #bbb;
 }
 
 .irclinks {
